@@ -38,6 +38,7 @@ for m in range(1, nplayers):
     plt.grid(True)
     plt.xticks(rotation=45)
     plt.tight_layout()
+    plt.ylim(-250,250)
 
     filename = os.path.join(output_dir, f"{person}_poker.png")
     plt.savefig(filename)
